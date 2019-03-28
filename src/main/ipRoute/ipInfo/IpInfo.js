@@ -10,7 +10,7 @@ function IpInfoRow(props){
 
 function IpInfo(props){
     if(props.info){
-        return <table>
+        return <table style={{margin:'0 auto'}}>
             <tbody>
                 {Object.keys(props.info).map((key) => {
                     const value = props.info[key]

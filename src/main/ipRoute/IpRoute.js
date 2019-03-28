@@ -19,12 +19,11 @@ class IpRoute extends Component{
             event.preventDefault()
         }
         const url = (this.state.ip)?`https://ip.nf/${this.state.ip}.json`:`https://ip.nf/me.json`
-
         this.setState({loading:true})
         axios.get(url).then(res=>{
             setTimeout(()=>{
                 this.setState({ip:res.data.ip.ip, ipInfo:res.data.ip, loading:false})
-            }, 2000)
+            }, 2000) //this mocks response delay
         })
     }
 
