@@ -10,7 +10,7 @@ class IpRoute extends Component{
             loading:false
         }
     }
-    componentWillMount = () => {
+    componentDidMount = () => {
         this.handleSubmit()
     }
 
